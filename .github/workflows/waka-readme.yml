@@ -11,8 +11,11 @@ jobs:
     name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
+      - id: date
+        run: echo "today=$(date +%F)" >> $GITHUB_OUTPUT
+
       - uses: athul/waka-readme@master # this action name
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          COMMIT_MESSAGE: "chore: update waka-readme metrics graph 🤖"
+          COMMIT_MESSAGE: "chore: update waka-readme metrics graph ($(date +'%Y-%m-%d')) 🤖"
           SHOW_TITLE: true
