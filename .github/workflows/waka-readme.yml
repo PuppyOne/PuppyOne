@@ -17,6 +17,6 @@ jobs:
       - uses: athul/waka-readme@master # this action name
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          COMMIT_MESSAGE: "chore: update waka-readme metrics graph (${{ steps.date.outputs.today }}) 🤖"
+          COMMIT_MESSAGE: "docs: update waka-readme metrics graph (${{ steps.date.outputs.today }}) 🤖"
           BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
           SHOW_TITLE: true
