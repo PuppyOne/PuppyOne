@@ -18,4 +18,5 @@ jobs:
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           COMMIT_MESSAGE: "chore: update waka-readme metrics graph (${{ steps.date.outputs.today }}) 🤖"
+          BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
           SHOW_TITLE: true
